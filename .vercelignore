@@ -1,0 +1,8 @@
+# Ignore Python files and source folders so Vercel does not mistake this static HTML site for a Python serverless backend
+downloads/source_skill
+*.py
+requirements.txt
+venv/
+__pycache__/
+.git
+.gitignore
