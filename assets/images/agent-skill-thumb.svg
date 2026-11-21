@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <linearGradient id="agentBg" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="14" fill="url(#agentBg)"/>
+  <!-- Center Robot/Agent Core -->
+  <circle cx="200" cy="110" r="42" fill="#1F2937" stroke="#A855F7" stroke-width="2.5"/>
+  <circle cx="200" cy="110" r="24" fill="#6B21A8"/>
+  <circle cx="192" cy="106" r="4" fill="#F3E8FF"/>
+  <circle cx="208" cy="106" r="4" fill="#F3E8FF"/>
+  <!-- Orbiting dots -->
+  <circle cx="130" cy="80" r="7" fill="#60A5FA"/>
+  <circle cx="270" cy="80" r="7" fill="#34D399"/>
+  <circle cx="200" cy="175" r="7" fill="#F472B6"/>
+  <line x1="130" y1="80" x2="165" y2="95" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <line x1="270" y1="80" x2="235" y2="95" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <line x1="200" y1="175" x2="200" y2="152" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="2 2"/>
+
+  <rect x="26" y="24" width="130" height="24" rx="6" fill="#1F2937" stroke="#374151" stroke-width="1"/>
+  <text x="91" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="700" fill="#D8B4FE" text-anchor="middle">AGENT SKILL</text>
+  <text x="370" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="600" fill="#9CA3AF" text-anchor="end">AUTONOMOUS RESEARCH</text>
+</svg>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Resources &amp; AI Agent Skills — AR LABS</title>
+  <meta name="description" content="Explore and download free AI tools, agent skills, automation scripts, and developer resources from AR LABS YouTube tutorials." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="AR LABS Home">
+        <img src="assets/images/logo.svg" alt="AR LABS Logo" width="160" height="38" />
+      </a>
+
+      <nav class="nav-links" id="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="resources.html" class="nav-link active">Resources</a>
+        <a href="tutorials.html" class="nav-link">Tutorials</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://youtube.com/@ARLabs" target="_blank" rel="noopener noreferrer" class="btn-youtube-icon" title="Watch on YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div class="section-header">
+        <span class="label-pill">DIGITAL REPOSITORY</span>
+        <h1 class="section-title">Free Resources</h1>
+        <p class="section-desc">
+          Useful tools, skills and files from my tutorials. Download them and build something of your own.
+        </p>
+      </div>
+
+      <!-- Filter & Search Toolbar -->
+      <div class="filter-toolbar">
+        <!-- Search Box -->
+        <div class="search-box-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input 
+            type="search" 
+            id="resource-search-input" 
+            class="search-input" 
+            placeholder="Search resources, agent skills, frameworks, tags..." 
+            autocomplete="off"
+          />
+          <button id="search-clear-btn" class="search-clear-btn" aria-label="Clear search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="filter-pills-row" role="tablist" aria-label="Filter by Category">
+          <button class="filter-pill active" data-category="all" role="tab">All Resources</button>
+          <button class="filter-pill" data-category="agent-skills" role="tab">AI Agent Skills</button>
+          <button class="filter-pill" data-category="automation" role="tab">AI Automation</button>
+          <button class="filter-pill" data-category="dev-tools" role="tab">Developer Tools</button>
+          <button class="filter-pill" data-category="coding" role="tab">Coding Resources</button>
+        </div>
+      </div>
+
+      <!-- Results Count Bar -->
+      <div class="filter-results-count" id="results-count-text">
+        Showing 6 resources
+      </div>
+
+      <!-- Resources Grid Container (Reactive JavaScript rendering) -->
+      <div class="resource-grid" id="resources-library-grid">
+        <!-- Rendered by js/main.js -->
+      </div>
+
+      <!-- Creator Guarantee Card -->
+      <div style="margin-top: 64px; background: #ffffff; border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: 36px 40px; box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
+        <div style="max-width: 680px;">
+          <span class="label-pill green" style="margin-bottom: 10px;">AR LABS CREATOR STANDARD</span>
+          <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px;">Only Real, Tested Files. Zero Paywalls.</h3>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">
+            Every downloadable file on this site is tested on stream or in my YouTube videos. Unreleased resources are clearly marked "Coming Soon" until their companion video is published. No spam, no paywalls, no fake affiliate redirects.
+          </p>
+        </div>
+        <a href="https://youtube.com/@ARLabs" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Suggest a Tool on YouTube ➜
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Coming Soon Notification Modal -->
+  <div class="modal-overlay" id="coming-soon-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Resource In Development</h3>
+        <button class="modal-close-btn" onclick="closeComingSoonModal()" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 14px;">
+          <strong class="modal-resource-name">This Resource</strong> is currently undergoing benchmark testing and cleanup for release.
+        </p>
+        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 20px;">
+          All resources published on AR LABS are thoroughly tested in video tutorials before being made available for free download.
+        </p>
+        <div style="background: var(--bg-secondary); padding: 16px; border-radius: 12px; border: 1px solid var(--border-light);">
+          <span style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--accent-primary); display: block; margin-bottom: 4px;">Get Notified On YouTube</span>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+            Subscribe to the channel to get an instant notification when the video tutorial and source zip file drop.
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" onclick="closeComingSoonModal()">Close</button>
+        <a href="https://youtube.com/@ARLabs" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+          Subscribe on YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="logo-link" style="margin-bottom: 12px;">
+            <img src="assets/images/logo.svg" alt="AR LABS" width="150" height="36" />
+          </a>
+          <p class="footer-brand-tagline">
+            "Technology made practical."
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+            Explore. Automate. Create. Real-world AI workflows and developer resources for independent creators.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="resources.html" class="footer-link">Free Resources</a></li>
+            <li><a href="tutorials.html" class="footer-link">Tutorials</a></li>
+            <li><a href="about.html" class="footer-link">About AR LABS</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Featured Skill</h4>
+          <ul class="footer-links-list">
+            <li><a href="resource-details.html" class="footer-link">GTA 6 Stream Clips Skill</a></li>
+            <li><a href="resource-details.html#features" class="footer-link">Features &amp; Highlights</a></li>
+            <li><a href="resource-details.html#installation" class="footer-link">Installation Guide</a></li>
+            <li><a href="resource-details.html#download" class="footer-link">Direct ZIP Download</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Creator Socials</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://youtube.com/@ARLabs" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: #e11d48; font-weight: 600;">YouTube Channel ↗</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a></li>
+            <li><a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-link">X (Twitter) ↗</a></li>
+            <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-link">Creator Discord ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 AR LABS. All rights reserved. Free and open source for creators.</span>
+        <span>Crafted with pure HTML, CSS &amp; Vanilla JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/resources.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
